@@ -43,7 +43,8 @@ img {
   height: 50px;
   border-radius: 0 !important;
 }
-.txt-nav {
+.txt-nav,
+.txt-contatos {
   width: 70%;
   text-align: center;
   height: 73vh;
@@ -52,7 +53,11 @@ img {
   justify-content: center;
   color: #fff;
 }
-.title-nav {
+.txt-contatos {
+  color: #000 !important;
+}
+.title-nav,
+.title-contatos {
   font-size: 40px;
   margin-bottom: 15px;
 }
@@ -63,6 +68,7 @@ img {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  border: 2px solid #111;
 }
 .case-anchor-links ul {
   display: flex;
@@ -70,6 +76,8 @@ img {
   justify-content: space-around;
   font-size: 13px;
   list-style: none;
+  font-weight: bold;
+  padding: 5px 0;
 }
 .link-anchor {
   text-decoration: none;
