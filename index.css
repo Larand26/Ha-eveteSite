@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -9,9 +11,18 @@ body {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
+img {
+  width: 500px;
+  height: 237px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 .arial {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.nav {
+  background-image: url(img/background.jpg);
 }
 .nav,
 .contatos {
@@ -30,6 +41,7 @@ body {
 .logo img {
   width: 50px;
   height: 50px;
+  border-radius: 0 !important;
 }
 .txt-nav {
   width: 70%;
@@ -38,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #fff;
 }
 .title-nav {
   font-size: 40px;
@@ -139,4 +152,5 @@ h3 {
 .duvidas-frequentes .container .case {
   background-color: #f5efef;
   padding: 15px 20px;
+  border-radius: 5px;
 }
