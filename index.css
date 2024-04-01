@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.arial {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: lighter;
+}
+.nav,
+.contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 700px;
+}
+.logo {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.txt-nav {
+  width: 70%;
+  text-align: center;
+  height: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-nav {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.times {
+  font-size: 24px;
+}
+.case-anchor-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.case-anchor-links ul {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  font-size: 13px;
+  list-style: none;
+}
+.link-anchor {
+  text-decoration: none;
+  color: #000;
+}
+
+.oq-e-haevete,
+.nosso-projeto,
+.ultimas-missoes,
+.equipamentos-essenciais,
+.algumas-das-missoes,
+.dicas-de-seguranca,
+.duvidas-frequentes {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 70%;
+  font-size: 35px;
+}
+.oq-e-haevete .container,
+.ultimas-missoes .container,
+.equipamentos-essenciais .container,
+.algumas-das-missoes .container,
+.dicas-de-seguranca .container,
+.duvidas-frequentes .container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.oq-e-haevete .container .case,
+.ultimas-missoes .container .case,
+.algumas-das-missoes .container .case,
+.duvidas-frequentes .container .case {
+  width: 45%;
+  margin-top: 15px;
+}
+.img-missao {
+  width: 100%;
+}
+h3 {
+  margin: 10px 0px;
+  font-weight: 100;
+  font-size: 20px;
+}
+.nosso-projeto .container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.nosso-projeto .container .case {
+  width: 30%;
+}
+.txt-projeto,
+.list-projeto li,
+.txt-equipamentos-essenciais,
+.txt-duvidas-frequentes {
+  font-size: 20px;
+}
+.title-projeto,
+.title-equipamentos-essenciais,
+.title-duvidas-frequentes {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.list-projeto li {
+  margin: 10px 0;
+}
+.equipamentos-essenciais .container .case,
+.dicas-de-seguranca .container .case {
+  width: 20%;
+  margin-top: 15px;
+}
+.duvidas-frequentes .container .case {
+  background-color: #f5efef;
+  padding: 15px 20px;
+}
