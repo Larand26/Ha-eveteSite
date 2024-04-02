@@ -57,9 +57,10 @@ img {
 .txt-contatos p a {
   color: #fff;
   text-decoration: none;
+  transition: 0.4s;
 }
 .txt-contatos p a:hover {
-  color: bisque;
+  color: aqua;
 }
 .title-nav,
 .title-contatos {
@@ -78,12 +79,15 @@ img {
 }
 .case-anchor-links ul {
   display: flex;
-  width: 90%;
+  width: 80%;
   justify-content: space-around;
   font-size: 12px;
   list-style: none;
   font-weight: bold;
   padding: 5px 0;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 .link-anchor {
   text-decoration: none;
