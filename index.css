@@ -21,7 +21,8 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
-.nav {
+.nav,
+.contatos {
   background-image: url(img/background.jpg);
 }
 .nav,
@@ -53,8 +54,12 @@ img {
   justify-content: center;
   color: #fff;
 }
-.txt-contatos {
-  color: #000 !important;
+.txt-contatos p a {
+  color: #fff;
+  text-decoration: none;
+}
+.txt-contatos p a:hover {
+  color: bisque;
 }
 .title-nav,
 .title-contatos {
@@ -92,7 +97,8 @@ img {
 .algumas-das-missoes,
 .dicas-de-seguranca,
 .duvidas-frequentes,
-.videos-e-podcasts {
+.videos-e-podcasts,
+.nossos-parceiros {
   margin-top: 50px;
   width: 100%;
   display: flex;
@@ -111,7 +117,8 @@ img {
 .algumas-das-missoes .container,
 .dicas-de-seguranca .container,
 .duvidas-frequentes .container,
-.videos-e-podcasts .container {
+.videos-e-podcasts .container,
+.nossos-parceiros .container {
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -151,13 +158,14 @@ h3 {
 .title-equipamentos-essenciais,
 .title-duvidas-frequentes {
   font-size: 25px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 .list-projeto li {
   margin: 10px 0;
 }
 .equipamentos-essenciais .container .case,
-.dicas-de-seguranca .container .case {
+.dicas-de-seguranca .container .case,
+.nossos-parceiros .container .case {
   width: 20%;
   margin-top: 15px;
 }
@@ -165,4 +173,10 @@ h3 {
   background-color: #f5efef;
   padding: 15px 20px;
   border-radius: 5px;
+}
+.contatos {
+  margin-top: 60px;
+}
+.nossos-parceiros .container .case img {
+  width: 100%;
 }
