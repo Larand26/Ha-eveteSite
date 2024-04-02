@@ -68,13 +68,14 @@ img {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  border: 2px solid #111;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
 }
 .case-anchor-links ul {
   display: flex;
   width: 90%;
   justify-content: space-around;
-  font-size: 13px;
+  font-size: 12px;
   list-style: none;
   font-weight: bold;
   padding: 5px 0;
@@ -90,7 +91,8 @@ img {
 .equipamentos-essenciais,
 .algumas-das-missoes,
 .dicas-de-seguranca,
-.duvidas-frequentes {
+.duvidas-frequentes,
+.videos-e-podcasts {
   margin-top: 50px;
   width: 100%;
   display: flex;
@@ -108,7 +110,8 @@ img {
 .equipamentos-essenciais .container,
 .algumas-das-missoes .container,
 .dicas-de-seguranca .container,
-.duvidas-frequentes .container {
+.duvidas-frequentes .container,
+.videos-e-podcasts .container {
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -117,7 +120,8 @@ img {
 .oq-e-haevete .container .case,
 .ultimas-missoes .container .case,
 .algumas-das-missoes .container .case,
-.duvidas-frequentes .container .case {
+.duvidas-frequentes .container .case,
+.videos-e-podcasts .container .case {
   width: 45%;
   margin-top: 15px;
 }
