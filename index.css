@@ -184,3 +184,77 @@ h3 {
 .nossos-parceiros .container .case img {
   width: 100%;
 }
+@media only screen and (max-width: 800px) {
+  .nav,
+  .contatos {
+    height: 500px;
+    min-height: 0;
+  }
+  .title-nav,
+  .title-contatos {
+    font-size: 22px;
+  }
+  .times {
+    font-size: 16px;
+  }
+  .logo img {
+    width: 65px;
+    height: 65px;
+  }
+  .case-anchor-links {
+    display: none;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .oq-e-haevete .container,
+  .ultimas-missoes .container,
+  .equipamentos-essenciais .container,
+  .algumas-das-missoes .container,
+  .dicas-de-seguranca .container,
+  .duvidas-frequentes .container,
+  .videos-e-podcasts .container,
+  .nossos-parceiros .container,
+  .nosso-projeto .container {
+    flex-direction: column;
+  }
+  .oq-e-haevete .container .case,
+  .ultimas-missoes .container .case,
+  .algumas-das-missoes .container .case,
+  .duvidas-frequentes .container .case,
+  .videos-e-podcasts .container .case,
+  .nosso-projeto .container .case,
+  .equipamentos-essenciais .container .case,
+  .dicas-de-seguranca .container .case,
+  .nossos-parceiros .container .case {
+    width: 100%;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .txt-missao {
+    font-size: 13px;
+  }
+  .title-projeto,
+  .title-equipamentos-essenciais,
+  .title-duvidas-frequentes {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .txt-projeto,
+  .list-projeto li,
+  .txt-equipamentos-essenciais,
+  .txt-duvidas-frequentes {
+    font-size: 13px;
+  }
+  .txt-projeto {
+    margin-bottom: 20px;
+  }
+  .duvidas-frequentes .container .case {
+    padding: 0;
+  }
+  .txt-duvidas-frequentes,
+  .title-duvidas-frequentes {
+    padding: 5px 7px;
+  }
+}
