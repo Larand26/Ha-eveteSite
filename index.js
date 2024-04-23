@@ -35,9 +35,9 @@ updateCarrossel();
 btnAntes.addEventListener("click", (evt) => {
   imgCarrossel.forEach((img) => {
     const pos = parseInt(img.getAttribute("pos"));
-    if (pos > tamanho - (tamanho - 2)) {
-      img.setAttribute("pos", (tamanho - (tamanho - 2)) * -1);
-    } else {
+    if(pos == tamanho - 3){
+      img.setAttribute("pos", -2);
+    }else {
       img.setAttribute("pos", pos + 1);
     }
     updateCarrossel();
@@ -46,12 +46,11 @@ btnAntes.addEventListener("click", (evt) => {
 btnDepois.addEventListener("click", (evt) => {
   imgCarrossel.forEach((img) => {
     const pos = parseInt(img.getAttribute("pos"));
-    if (pos < (tamanho - (tamanho - 2)) * -1) {
-      img.setAttribute("pos", tamanho - (tamanho - 2));
+    if (pos == -2) {
+      img.setAttribute("pos", tamanho - 3);
     } else {
       img.setAttribute("pos", pos - 1);
     }
-    console.log(pos + " - " + img.getAttribute("mes"));
     updateCarrossel();
   });
 });
