@@ -1,6 +1,7 @@
 const imgCarrossel = document.querySelectorAll(".img-carrossel");
 const btnAntes = document.querySelector(".antes");
 const btnDepois = document.querySelector(".depois");
+const tamanho = imgCarrossel.length;
 
 const updateCarrossel = () => {
   imgCarrossel.forEach((img) => {
@@ -34,12 +35,10 @@ updateCarrossel();
 btnAntes.addEventListener("click", (evt) => {
   imgCarrossel.forEach((img) => {
     const pos = parseInt(img.getAttribute("pos"));
-    img.setAttribute("pos", pos + 1);
-    if (pos == 0 && img.classList.contains("primeiro")) {
-      imgCarrossel.forEach((el) => {
-        const posAtual = parseInt(el.getAttribute("pos"));
-        el.setAttribute("pos", posAtual - imgCarrossel.length);
-      });
+    if (pos > tamanho - (tamanho - 2)) {
+      img.setAttribute("pos", (tamanho - (tamanho - 2)) * -1);
+    } else {
+      img.setAttribute("pos", pos + 1);
     }
     updateCarrossel();
   });
@@ -47,13 +46,12 @@ btnAntes.addEventListener("click", (evt) => {
 btnDepois.addEventListener("click", (evt) => {
   imgCarrossel.forEach((img) => {
     const pos = parseInt(img.getAttribute("pos"));
-    img.setAttribute("pos", pos - 1);
-    if (pos == 0 && img.classList.contains("proximo")) {
-      imgCarrossel.forEach((el) => {
-        const posAtual = parseInt(el.getAttribute("pos"));
-        el.setAttribute("pos", posAtual + imgCarrossel.length);
-      });
+    if (pos < (tamanho - (tamanho - 2)) * -1) {
+      img.setAttribute("pos", tamanho - (tamanho - 2));
+    } else {
+      img.setAttribute("pos", pos - 1);
     }
+    console.log(pos + " - " + img.getAttribute("mes"));
     updateCarrossel();
   });
 });
