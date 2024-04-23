@@ -11,10 +11,15 @@ const updateCarrossel = () => {
         img.style.opacity = `0`;
       } else if (pos < 0) {
         img.style.opacity = `${(pos + 5) / 10}`;
+        img.style.transform = `translate(${pos * 15}%) scale(${
+          (pos + 10) / 10
+        })`;
       } else if (pos > 0) {
         img.style.opacity = `${(pos * -1 + 5) / 10}`;
+        img.style.transform = `translate(${pos * 15}%) scale(${
+          (pos * -1 + 10) / 10
+        })`;
       }
-      img.style.transform = `translate(${pos * 15}%) scale(0.8)`;
       if (!img.classList.contains("carrossel-hidden")) {
         img.classList.add("carrossel-hidden");
       }
