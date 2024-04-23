@@ -24,6 +24,7 @@ img {
 .nav,
 .contatos {
   background-image: url(img/background.jpg);
+  background-position: center center;
 }
 .nav,
 .contatos {
@@ -186,7 +187,7 @@ h3 {
 }
 .mosaico {
   display: grid !important;
-  justify-content: center;
+  gap: 30px;
 }
 .mosaico img:nth-child(1) {
   grid-area: a;
@@ -204,7 +205,6 @@ h3 {
   grid-template-areas:
     "a  b"
     "c  d";
-  gap: 60px;
 }
 .mosaico img {
   width: 100%;
