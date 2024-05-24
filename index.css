@@ -10,6 +10,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
 }
 img {
   width: 500px;
@@ -167,8 +168,7 @@ h3 {
   margin: 10px 0;
 }
 .equipamentos-essenciais .container .case,
-.dicas-de-seguranca .container .case,
-.nossos-parceiros .container .case {
+.dicas-de-seguranca .container .case {
   width: 20%;
   margin-top: 15px;
 }
@@ -180,8 +180,25 @@ h3 {
 .contatos {
   margin-top: 60px;
 }
+.nossos-parceiros .container {
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  min-height: 280px;
+  justify-content: center;
+}
+.nossos-parceiros .container .case {
+  border-radius: 20px;
+  margin-top: 10px;
+}
 .nossos-parceiros .container .case img {
   width: 100%;
+  max-width: 180px;
+  max-height: 180px;
+}
+.logoC {
+  position: absolute;
+  transition: 0.5s ease-out;
+  z-index: 10;
 }
 .mosaico {
   height: 600px;

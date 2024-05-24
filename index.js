@@ -35,9 +35,9 @@ updateCarrossel();
 btnAntes.addEventListener("click", (evt) => {
   imgCarrossel.forEach((img) => {
     const pos = parseInt(img.getAttribute("pos"));
-    if(pos == tamanho - 3){
+    if (pos == tamanho - 3) {
       img.setAttribute("pos", -2);
-    }else {
+    } else {
       img.setAttribute("pos", pos + 1);
     }
     updateCarrossel();
